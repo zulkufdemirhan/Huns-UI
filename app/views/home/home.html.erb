@@ -1,10 +1,12 @@
-<div class="max-w-2xl px-6 mx-auto mt-8 md:mt-20 md:mb-12 mb-6">
+<div class="max-w-2xl px-6 mx-auto mt-8 md:mt-20 md:mb-12 mb-6" data-controller="colors">
   <div class="md:my-12">
     <div class="text-3xl md:text-5xl tracking-tight font-semibold text-gray-900 text-center">Create Tailwind CSS<br>color families</div>
       <p class="text-gray-500 md:text-lg mt-4 text-center">Enter a hexcode</p>
     </div>
   <div class="md:relative fixed left-4 right-4 bottom-6 z-40 md:inset-0">
-    <input type="text" placeholder="Hexcode" class="px-6 h-14 border border-gray-300 rounded-xl shadow-xl md:shadow-md w-full bg-gray-50">
-    <input type="color" class="absolute top-1/2 transform -translate-y-1/2 w-7 h-7 rounded-full border-none right-4 cursor-pointer" style="appearance: none;">
+    <input type="text" value= "#000000" placeholder="Hexcode" class="px-6 h-14 border border-gray-300 rounded-xl shadow-xl md:shadow-md w-full bg-gray-50"
+           data-colors-target="hexTextBox">
+    <input type="color" class="absolute top-1/2 transform -translate-y-1/2 w-7 h-7 rounded-full border-none right-4 cursor-pointer"
+           data-colors-target="hexSelector" data-action="colors#printHexCode">
   </div>
 </div>
