@@ -600,3 +600,50 @@ Processing by HomeController#home as HTML
 Completed 200 OK in 24ms (Views: 22.5ms | Allocations: 9223)
 
 
+Started GET "/" for ::1 at 2023-01-12 23:34:11 +0300
+Processing by HomeController#home as HTML
+Started GET "/" for ::1 at 2023-01-12 23:34:11 +0300
+  Rendering layout layouts/application.html.erb
+  Rendering home/home.html.erb within layouts/application
+  Rendered home/home.html.erb within layouts/application (Duration: 0.9ms | Allocations: 495)
+Processing by HomeController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/home.html.erb within layouts/application
+  Rendered home/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 140)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 143)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 132)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 146)
+  Rendered layout layouts/application.html.erb (Duration: 278.0ms | Allocations: 245063)
+  Rendered layout layouts/application.html.erb (Duration: 283.9ms | Allocations: 251746)
+Completed 200 OK in 279ms (Views: 278.4ms | ActiveRecord: 0.0ms | Allocations: 245509)
+
+
+Completed 200 OK in 299ms (Views: 290.6ms | ActiveRecord: 0.0ms | Allocations: 256672)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/tailwind-6ad7a4429df6e728436434e5b3dc0edd01c12be43649996dd48920fd21275bbe.css"):
+  
+Started GET "/" for ::1 at 2023-01-12 23:34:13 +0300
+Processing by HomeController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/home.html.erb within layouts/application
+  Rendered home/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layouts/_header.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 7802)
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 8106)
+
+
+Started GET "/" for ::1 at 2023-01-12 23:34:14 +0300
+Processing by HomeController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/home.html.erb within layouts/application
+  Rendered home/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layouts/_header.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 21.8ms | Allocations: 7625)
+Completed 200 OK in 23ms (Views: 22.4ms | ActiveRecord: 0.0ms | Allocations: 7888)
+
+
