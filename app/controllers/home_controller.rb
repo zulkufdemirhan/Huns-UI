@@ -5,7 +5,7 @@ class HomeController < ApplicationController
   before_action :set_color
 
   def home
-    @palette = Paleta::Palette.generate(type: :shades, from: :color, size: 5, color:)
+    @palette = Paleta::Palette.generate(type: :shades, from: :color, size: 10, color:).reverse_each
   end
 
   private

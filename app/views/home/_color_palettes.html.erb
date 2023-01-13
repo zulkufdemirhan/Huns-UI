@@ -11,7 +11,7 @@
     <% palette.each do |palet| %>
       <div class="flex flex-col items-center justify-center text-center my-4 p-1">
         <div class="w-24 h-24 flex cursor-pointer flex-col justify-center rounded shadow-inner p-2 md:p-4" style="background-color: #<%= palet.hex %>">
-          <div class="font-medium">100</div>
+          <div class="font-medium" style="color: #<%= palet.invert.hex %>">100</div>
           <div class="text-xs uppercase opacity-90"><%= "##{palet.hex}" %></div>
         </div>
       </div>
