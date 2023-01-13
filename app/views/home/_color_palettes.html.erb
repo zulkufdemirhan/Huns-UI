@@ -9,11 +9,10 @@
 
   <div class="container rounded-xl bg-gray-50 border mx-auto flex flex-wrap justify-center text-gray-600 border-b overflow-hidden">
   <% palette.each do |palet| %>
-    <% hex = palet.hex %>
     <div class="flex flex-col items-center justify-center text-center my-4 p-1">
-      <div class="w-24 h-24 flex cursor-pointer flex-col justify-center rounded shadow-inner p-2 md:p-4" style="background-color: #<%= hex %>">
+      <div class="w-24 h-24 flex cursor-pointer flex-col justify-center rounded shadow-inner p-2 md:p-4" style="background-color: #<%= palet.hex %>">
         <div class="font-medium">100</div>
-        <div class="text-xs uppercase opacity-90"><%= "##{hex}" %></div>
+        <div class="text-xs uppercase opacity-90"><%= "##{palet.hex}" %></div>
       </div>
     </div>
   <% end %>
