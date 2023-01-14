@@ -1,6 +1,23 @@
-<div class="flex items-center mb-2 mt-8">
+<div class="flex justify-between items-center mb-2 mt-8">
   <button class="text-gray-500 px-3 py-1.5 text bg-white bg-gray-100 rounded-md">Overview</button>
-  <button class="text-gray-500 px-3 py-1.5 text bg-white hover:bg-gray-100 rounded-md mx-2">Other</button>
+  <!-- Dropdown menu -->
+  <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="text-center inline-flex items-center text-gray-500 px-3 py-1.5 text bg-white hover:bg-gray-100 rounded-md" type="button">Font Family<svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+  <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700">
+    <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+      <li>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Inter</a>
+      </li>
+      <li>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Helvetica</a>
+      </li>
+      <li>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Monospace</a>
+      </li>
+      <li>
+        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Cursive</a>
+      </li>
+    </ul>
+  </div>
 </div>
 
 <div class="container rounded-xl bg-gray-50 border mx-auto flex justify-between text-gray-600 border-b overflow-hidden p-4">
