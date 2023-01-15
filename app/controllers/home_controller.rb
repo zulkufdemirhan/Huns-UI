@@ -14,7 +14,7 @@ class HomeController < ApplicationController
 
   def set_color
     selected_color = params[:color]
-    selected_color = selected_color.present? ? selected_color : 'ffffff'
+    selected_color = selected_color.present? ? selected_color : '718096'
     @color         = Paleta::Color.new(:hex, selected_color)
   end
 end
