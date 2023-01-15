@@ -3,10 +3,12 @@
   <head>
     <title>HunsUi</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    <%= csrf_meta_tags %>
+    <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
+
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <link href="https://unpkg.com/slim-select@latest/dist/slimselect.css" rel="stylesheet">
     <%= javascript_importmap_tags %>
   </head>
 
