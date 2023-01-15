@@ -24,6 +24,12 @@ export default class extends Controller {
             return option.text.toLowerCase().indexOf(search.toLowerCase()) !== -1
           }
         },
+        afterChange: (newVal) => {
+          let path = `?color=${newVal[0].value.replace('#', '')}`
+          fetch(path, { headers: { Accept: "text/vnd.turbo-stream.html" }})
+              .then(r => r.text())
+              .then(html => Turbo.renderStreamMessage(html))
+              }
       }
     })
 
@@ -33,7 +39,7 @@ export default class extends Controller {
   setColors() {
     const color = [];
     for(const key in colors) {
-      color.push({ text: colors[key].html, value: colors[key].hex, html: colors[key].html})
+      color.push({ text: colors[key].html, value: colors[key].value, html: colors[key].html})
     }
 
     return color;
