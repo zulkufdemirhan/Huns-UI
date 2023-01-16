@@ -129,7 +129,7 @@ export default class extends Controller {
   }
 
   show(){
-     this.openValue = true;
+    this.openValue = true;
   }
 
   hide(event) {

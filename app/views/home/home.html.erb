@@ -1,4 +1,4 @@
-<div class="w-4/5 px-6 mx-auto mt-28 md:mt-20 md:mb-12 mb-6 relative">
+<div class="w-4/5 px-6 mx-auto mt-28 md:mt-20 md:mb-12 mb-6 relative" data-controller="slide export" >
   <!-- header_section -->
   <%= render "home/selection", colors: @colors %>
   <!-- color_palettes -->
@@ -6,5 +6,7 @@
   <!-- Components Overview -->
   <%= render "home/overview" %>
   <!-- Settings Page -->
-  <%#= render "home/color_settings" %>
+  <%= render "home/color_settings" %>
+  <!-- Export Code -->
+  <%= render "home/code_export" %>
 </div>
