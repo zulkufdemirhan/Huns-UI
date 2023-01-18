@@ -44,7 +44,7 @@
   <div class="rounded-xl bg-gray-50 border mx-auto flex flex-wrap justify-center text-gray-600 border-b overflow-hidden gap-1">
     <% palette.each do |palet| %>
       <div class="flex flex-col items-center justify-center text-center my-4">
-        <div class="w-24 h-24 flex cursor-pointer flex-col justify-center rounded-full shadow-inner p-2 md:p-4" style="background-color: #<%= palet.hex %>">
+        <div class="w-24 h-24 flex cursor-pointer flex-col justify-center rounded shadow-inner p-2 md:p-4" style="background-color: #<%= palet.hex %>">
           <div class="font-medium" style="color: #<%= palet.invert.hex %>">100</div>
           <div class="text-xs uppercase font-medium"><%= "##{palet.hex}" %></div>
         </div>
