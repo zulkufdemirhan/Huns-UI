@@ -2,12 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-/*
+
 
 @layer components {
-  .btn-primary {
-    @apply py-2 px-4 bg-blue-200;
+  [type="text"]:focus {
+    --tw-ring-color: #ea580c;
+    border-color: #ea580c;
+  }
+    .text-blue-600{
+    color:black !important;
+  }
+  .list-hover:hover{
+    background-color:#444b5a;
+    border-radius: 5px;
+  }
+  .list-icon{
+    color: #a3aebd;
   }
 }
 
-*/
