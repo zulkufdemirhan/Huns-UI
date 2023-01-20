@@ -1,8 +1,8 @@
-<div class="w-4/5 px-6 mx-auto mt-28 md:mt-20 md:mb-12 mb-6 relative" data-controller="slide export">
+<div class="w-4/5 px-6 mx-auto mt-28 md:mt-20 md:mb-12 mb-6 relative" data-controller="home" data-controller="slide export">
   <!-- header_section -->
   <%= render "home/selection", colors: @colors %>
   <!-- color_palettes -->
-  <%= render "home/color_palettes", palette: @palette %>
+  <%= render "home/color_palettes", palette: @palette, selected_color: @selected_color %>
   <!-- Mock Dashboard -->
   <%= render "home/dashboard_component" %>
   <!-- Settings Page -->
