@@ -5,9 +5,10 @@
 
 
 @layer components {
+  /* Current color input focus */
   [type="text"]:focus {
-    --tw-ring-color: #ea580c;
-    border-color: #ea580c;
+    --tw-ring-color: #5385ae;
+    border-color: #5385ae;
   }
     .text-blue-600{
     color:black !important;
@@ -18,6 +19,13 @@
   }
   .list-icon{
     color: #a3aebd;
+  }
+  /* current color gradient  */
+  .to-orange-600 {
+    --tw-gradient-to: #5385ae !important;
+  }
+  .from-orange-400 {
+    --tw-gradient-from: #719cbf !important;
   }
 }
 
