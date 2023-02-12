@@ -1,5 +1,5 @@
-
 import { Controller } from "@hotwired/stimulus"
+import tailwindcssPaletteGenerator from 'https://cdn.jsdelivr.net/npm/tailwindcss-palette-generator@0.2/+esm'
 
 // Connects to data-controller="export"
 export default class extends Controller {
